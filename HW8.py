@@ -55,7 +55,7 @@ def plot_rest_categories(db):
     plt.title("Restaurant Categories vs. Number of Restaurants")
     plt.show(block=True)
 
-    print(plt.rcParams['backend'])
+    #print(plt.rcParams['backend'])
     #ask how to make sure that the graph is correct in office hours
 
     return rest_categories
