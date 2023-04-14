@@ -38,7 +38,7 @@ def plot_rest_categories(db):
     restaurant categories and the values should be the number of restaurants in each category. The function should
     also create a bar chart with restaurant categories and the count of number of restaurants in each category.
     """
-    conn = sqlite3.connect(db)
+    #conn = sqlite3.connect(db)
     cursor = conn.cursor()
     cursor.execute("SELECT categories.category, COUNT(restaurants.id) FROM restaurants JOIN categories ON restaurants.category_id = categories.id GROUP BY categories.category")
     data = cursor.fetchall()
@@ -53,12 +53,12 @@ def plot_rest_categories(db):
     plt.xlabel("Restaurant Categories")
     plt.ylabel("Number of Restaurants")
     plt.title("Restaurant Categories vs. Number of Restaurants")
-    plt.show(block=True)
+    #plt.show(block=True)
 
     #print(plt.rcParams['backend'])
     #ask how to make sure that the graph is correct in office hours
 
-    return rest_categories
+    #return rest_categories
 
     pass
 
