@@ -58,7 +58,7 @@ def plot_rest_categories(db):
     #print(plt.rcParams['backend'])
     #ask how to make sure that the graph is correct in office hours
 
-    #return rest_categories
+    return rest_categories
 
     pass
 
